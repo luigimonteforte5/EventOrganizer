@@ -3,7 +3,7 @@ spring:
     name: EventOrganizer
 
   datasource:
-    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:event-organizer}
+    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:event-organizer-db}
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
   jpa:
