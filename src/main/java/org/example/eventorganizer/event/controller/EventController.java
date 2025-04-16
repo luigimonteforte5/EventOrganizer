@@ -19,14 +19,14 @@ public class EventController {
     private final EventService eventService;
 
     @PostMapping("/test/create/event")
-    public ResponseEntity<EventDTO> createTestEvent(){
+    public ResponseEntity<EventDTO> createTestEvent() {
         EventDTO testEvent = eventService.createTestEvent();
 
         return ResponseEntity.status(HttpStatus.CREATED).body(testEvent);
     }
 
     @GetMapping("/events")
-    public ResponseEntity<List<EventDTO>> getEvents(){
+    public ResponseEntity<List<EventDTO>> getEvents() {
         List<EventDTO> events = eventService.getEvents();
 
         return ResponseEntity.status(HttpStatus.OK).body(events);
