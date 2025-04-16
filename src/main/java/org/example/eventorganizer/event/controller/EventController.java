@@ -3,7 +3,6 @@ package org.example.eventorganizer.event.controller;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.example.eventorganizer.event.model.EventDTO;
-import org.example.eventorganizer.event.repository.EventRepository;
 import org.example.eventorganizer.event.service.EventService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
