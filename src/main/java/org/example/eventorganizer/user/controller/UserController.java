@@ -18,11 +18,11 @@ public class UserController {
     private final UserService userService;
 
     @PostMapping("/test/create/user")
-    public ResponseEntity<String> createTestUser(){
+    public ResponseEntity<UserDTO> createTestUser(){
         log.info("[USER SERVICE] Creating test user");
-        userService.createTestUser();
+        UserDTO userDto = userService.createTestUser();
 
-        return ResponseEntity.status(HttpStatus.CREATED).body("Test User created");
+        return ResponseEntity.status(HttpStatus.CREATED).body(userDto);
     }
 
     @GetMapping("/users")

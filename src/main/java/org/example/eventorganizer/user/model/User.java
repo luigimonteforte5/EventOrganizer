@@ -18,7 +18,7 @@ import java.util.UUID;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(name = "uuid", columnDefinition = "CHAR(36)")
     @JdbcTypeCode(SqlTypes.CHAR)
