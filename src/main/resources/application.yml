@@ -1,9 +1,8 @@
 spring:
   application:
     name: EventOrganizer
-
   datasource:
-    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:event-organizer-db?useUnicode=true&characterEncoding=utf8mb4&serverTimezone=UTC}
+    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:event-organizer-db}?useUnicode=true&characterEncoding=utf8mb4&serverTimezone=UTC
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
   jpa:
@@ -14,3 +13,21 @@ spring:
     change-log: classpath:db/changelog/db.changelog-master.xml
   profiles:
     active: ${SPRING_PROFILES_ACTIVE:local}
+
+  security:
+    oauth2:
+      client:
+        provider:
+          external:
+            issuer-uri: ${AUTH_ISSUER_URL}
+        registration:
+          external:
+            client-name: external-client
+            client-secret: ${KEYCLOAK_SECRET}
+            client-id: external-client
+            scope: openid,offline_access,profile
+            authorization-grant-type: authorization_code
+            provider: external
+
+server:
+  port: ${SERVER_PORT:8080}
