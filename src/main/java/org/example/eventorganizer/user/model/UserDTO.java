@@ -1,8 +1,8 @@
-package org.example.eventorganizer.User.model;
+package org.example.eventorganizer.user.model;
 
 import lombok.Builder;
 import lombok.Value;
-import org.example.eventorganizer.User.enums.UserRole;
+import org.example.eventorganizer.user.enums.UserRole;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;

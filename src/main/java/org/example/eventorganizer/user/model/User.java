@@ -1,10 +1,9 @@
-package org.example.eventorganizer.User.model;
+package org.example.eventorganizer.user.model;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.example.eventorganizer.User.enums.UserRole;
+import org.example.eventorganizer.user.enums.UserRole;
 import org.hibernate.annotations.JdbcTypeCode;
-import org.hibernate.annotations.Type;
 import org.hibernate.type.SqlTypes;
 
 import java.time.LocalDateTime;

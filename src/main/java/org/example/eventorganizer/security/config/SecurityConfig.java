@@ -1,4 +1,4 @@
-package org.example.eventorganizer.Security.config;
+package org.example.eventorganizer.security.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

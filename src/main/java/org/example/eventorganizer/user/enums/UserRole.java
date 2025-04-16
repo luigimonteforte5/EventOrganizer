@@ -1,4 +1,4 @@
-package org.example.eventorganizer.User.enums;
+package org.example.eventorganizer.user.enums;
 
 public enum UserRole {
     USER_ROLE,

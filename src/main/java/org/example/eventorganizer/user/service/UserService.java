@@ -1,19 +1,18 @@
-package org.example.eventorganizer.User.service;
+package org.example.eventorganizer.user.service;
 
 import lombok.RequiredArgsConstructor;
-import org.example.eventorganizer.User.enums.UserRole;
-import org.example.eventorganizer.User.model.User;
-import org.example.eventorganizer.User.model.UserDTO;
-import org.example.eventorganizer.User.model.UserMapper;
-import org.example.eventorganizer.User.repository.UserRepository;
+import org.example.eventorganizer.user.enums.UserRole;
+import org.example.eventorganizer.user.model.User;
+import org.example.eventorganizer.user.model.UserDTO;
+import org.example.eventorganizer.user.model.UserMapper;
+import org.example.eventorganizer.user.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
-import java.util.stream.Collectors;
 
-import static org.example.eventorganizer.User.enums.UserRole.USER_ROLE;
+import static org.example.eventorganizer.user.enums.UserRole.USER_ROLE;
 
 @Service
 @RequiredArgsConstructor

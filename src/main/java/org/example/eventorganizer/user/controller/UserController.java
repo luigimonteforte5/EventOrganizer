@@ -1,9 +1,9 @@
-package org.example.eventorganizer.User.controller;
+package org.example.eventorganizer.user.controller;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.example.eventorganizer.User.model.UserDTO;
-import org.example.eventorganizer.User.service.UserService;
+import org.example.eventorganizer.user.model.UserDTO;
+import org.example.eventorganizer.user.service.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

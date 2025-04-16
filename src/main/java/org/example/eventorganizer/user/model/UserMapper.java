@@ -1,4 +1,4 @@
-package org.example.eventorganizer.User.model;
+package org.example.eventorganizer.user.model;
 
 import org.mapstruct.*;
 
