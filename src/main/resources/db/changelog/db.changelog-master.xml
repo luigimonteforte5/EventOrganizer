@@ -6,6 +6,6 @@
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
 
     <include file="db/changelog/init.sql"/>
-
+    <includeAll path = "db/changelog/versions"/>
 
 </databaseChangeLog>
