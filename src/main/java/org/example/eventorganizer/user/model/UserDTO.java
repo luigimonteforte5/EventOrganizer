@@ -25,6 +25,6 @@ public class UserDTO implements Serializable {
     LocalDateTime registrationDate;
     LocalDateTime lastLogin;
 
-    List <Long> eventsOrganizedIds;
+    List<Long> eventsOrganizedIds;
     List<Long> eventsBookedIds;
 }
