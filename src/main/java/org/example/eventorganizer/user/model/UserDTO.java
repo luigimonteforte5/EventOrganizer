@@ -3,7 +3,6 @@ package org.example.eventorganizer.user.model;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.UUID;
 
 import org.example.eventorganizer.user.enums.UserRole;
 
@@ -16,9 +15,8 @@ import lombok.Value;
 @Value
 @Builder
 public class UserDTO implements Serializable {
-    UUID uuid;
+    String keycloakId;
     String email;
-    String password;
     String name;
     String surname;
     UserRole role;

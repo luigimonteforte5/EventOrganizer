@@ -3,12 +3,9 @@ package org.example.eventorganizer.user.model;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 import org.example.eventorganizer.event.model.Event;
 import org.example.eventorganizer.user.enums.UserRole;
-import org.hibernate.annotations.JdbcTypeCode;
-import org.hibernate.type.SqlTypes;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -24,12 +21,10 @@ public class User {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@Column(name = "uuid", columnDefinition = "CHAR(36)")
-	@JdbcTypeCode(SqlTypes.CHAR)
-	private UUID uuid;
+	@Column(unique = true, nullable = false)
+	private String keycloakId;
 
 	private String email;
-	private String password;
 	@Column(name = "first_name")
 	private String name;
 	@Column(name = "last_name")
